@@ -120,6 +120,29 @@
 
 const array = [5,45,68,15,84,75,610,474,785];
 
-const findLargest = Math.max(...array); //using javascript math property and spread operator
+// const findLargest = Math.max(...array); //using javascript math property and spread operator
 
-console.log(findLargest);
+// console.log(findLargest);
+
+
+// Find largest value using for-loop
+
+
+// let maxValue = array[0];
+
+// for (let i = 0; i < array.length; i++){
+//     if (array[i] > maxValue) {
+//         maxValue = array[i];
+//     }
+// }
+
+// console.log(maxValue);
+
+
+//find largest value using reduce method
+
+const reduceMax = array.reduce((acc, curr) =>{
+    return Math.max(acc, curr)
+}, array[0]);
+
+console.log(reduceMax);
