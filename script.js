@@ -146,3 +146,5 @@ const reduceMax = array.reduce((acc, curr) =>{
 }, array[0]);
 
 console.log(reduceMax);
+
+// switched to branch workspace
